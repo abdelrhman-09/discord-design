@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #000;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #00f;
+}
+
+/* Home Section */
+.home-section {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.dynamic-text {
+    color: #00f;
+    font-family: 'Arial', sans-serif; /* Default font */
+}
+
+/* Discord Link Styling */
+.discord-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.discord-link i {
+    margin-bottom: 10px;
+    font-size: 50px; /* Adjust icon size */
+    color: #5865F2; /* Discord brand color */
+}
+
+.discord-link a {
+    color: #00f;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.discord-link a:hover {
+    text-decoration: underline;
+}
+
+/* My Work Section */
+.work-section {
+    background-color: #00f;
+    padding: 50px 20px;
+}
+
+.work-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: #000;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px;
+    border-top: 1px solid #00f;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
